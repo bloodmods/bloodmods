@@ -1,0 +1,61 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(44, 1, 1, 0.61);
+    border-radius: 25px;
+    padding: 5px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center; 
+    width: 30%;
+}
+.navbarbutton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #00000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbarbutton:hover {
+    background-color: #00000096;
+}
+.navbar a {
+    margin: 0; 
+    padding: 5px 10px; 
+    display: flex; 
+    align-items: center; 
+}
+.navbar img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 5px; 
+}
+.navbardropdown {
+    position: relative;
+    display: inline-block;
+}
+.navbardropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(44, 1, 1, 0.61);
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.navbardropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.navbardropdown-content a:hover {
+    background-color: #00000096;
+}
+.navbardropdown:hover .dropdown-content {
+    display: block;
+}
